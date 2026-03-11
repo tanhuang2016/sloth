@@ -1,7 +1,8 @@
-// Learn more about Tauri commands at https://tauri.app/develop/calling-rust/
+use sloth_core::GreetResponse;
+
 #[tauri::command]
-fn greet(name: &str) -> String {
-    format!("Hello, {}! You've been greeted from Rust!", name)
+fn greet(name: String) -> GreetResponse {
+    sloth_desktop::greet(name)
 }
 
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
