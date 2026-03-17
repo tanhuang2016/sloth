@@ -13,6 +13,7 @@
     "preview": "vite preview",
     "tauri": "tauri",
     "app:dev": "tauri dev",
+    "app:build": "tauri build",
     "server:dev": "cargo run -p sloth-server"
   },
   "dependencies": {
